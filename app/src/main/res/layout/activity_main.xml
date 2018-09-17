@@ -7,8 +7,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <!-- now, Alex, you created a copy of master, by creating develop branch; practically, develop is a copy of master, is this ok for you? yep
-    it is locally, not uploaded on github yet, so if you look it in the cloud, you will not see it there it
+    <!-- now please create a new branch: you do a feature branch; so please create it - you started making changes on the develop branch, that is forbidden; I asked you to create a new branch first
     -->
     <LinearLayout
     android:layout_width="match_parent"
@@ -17,7 +16,9 @@
 
         <TextureView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+          />
 
     </LinearLayout>
 
@@ -29,6 +30,15 @@
         android:orientation="vertical"> <!-- this modification is for testing purposes
         now commit these changes to your first commit on develop -->
 
+
+        <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <!-- after you make a change, you commit it (locally) and push it (to the origin) and just after that you do the pull-request-->
     </LinearLayout>
 
     <LinearLayout
