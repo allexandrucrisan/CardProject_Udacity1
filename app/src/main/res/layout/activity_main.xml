@@ -7,7 +7,9 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <!-- nu mai stiu cum poti sa faci push initial, ca nu am mai facut de ceva timp, tu tocmai ai facut la cele 2 -->
+    <!-- now, Alex, you created a copy of master, by creating develop branch; practically, develop is a copy of master, is this ok for you? yep
+    it is locally, not uploaded on github yet, so if you look it in the cloud, you will not see it there it
+    -->
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
@@ -23,7 +25,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical"> <!-- this modification is for testing purposes
+        now commit these changes to your first commit on develop -->
 
     </LinearLayout>
 
