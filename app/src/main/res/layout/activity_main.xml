@@ -4,69 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <!-- now please create a new branch: you do a feature branch; so please create it - you started making changes on the develop branch, that is forbidden; I asked you to create a new branch first
-    -->
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight=".4">
+    <!--Header-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextureView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-          />
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
 
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title"
+                    android:textSize="40sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"> <!-- this modification is for testing purposes
-        now commit these changes to your first commit on develop -->
+            </RelativeLayout>
 
+            <!--Betel Manastur-->
+            <RelativeLayout
+                android:id="@+id/BetelMan"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/gradient_green">
 
-        <TextureView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            />
+                <TextView
+                    android:id="@+id/BM1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/BetelManasturTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeMedium"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
 
+                <TextView
+                    android:id="@+id/BM2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BM1"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/BetelManasturAddress"
+                    android:textStyle="italic" />
 
-        <!-- after you make a change, you commit it (locally) and push it (to the origin) and just after that you do the pull-request-->
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageBM"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/bm_logo" />
+            </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+            <!--Betel Vest-->
+            <RelativeLayout
+                android:id="@+id/BetelVest"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/gradient_red">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/BV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/BetelVestTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeMedium"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+                <TextView
+                    android:id="@+id/BV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BV1"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/BetelVestAddress"
+                    android:textStyle="italic" />
 
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageBV"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/bv_logo" />
+            </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".4">
+            <!--Betel Centru-->
+            <RelativeLayout
+                android:id="@+id/BetelCen"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/gradient_yellow">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/BC1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/BetelCentruTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeMedium"
+                    android:textStyle="bold"
+                    app:fontFamily="cursive" />
 
+                <TextView
+                    android:id="@+id/BC2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BC1"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/BetelCentruAddress"
+                    android:textStyle="italic" />
 
+                <ImageView
+                    android:id="@+id/imageBC"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/bc_logo" />
+            </RelativeLayout>
 
+            <!--Media-->
+            <RelativeLayout
+                android:id="@+id/media"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal">
 
+                <ImageButton
+                    android:id="@+id/youtubeButton"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/wwwButon"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/yt_logo" />
 
+                <ImageButton
+                    android:id="@+id/wwwButon"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ww_logo" />
 
+                <ImageButton
+                    android:id="@+id/facebookButton"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/wwwButon"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/fb_logo" />
+            </RelativeLayout>
 
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
