@@ -4,69 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <!-- now please create a new branch: you do a feature branch; so please create it - you started making changes on the develop branch, that is forbidden; I asked you to create a new branch first
-    -->
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight=".4">
+    <!--Header-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        app:fontFamily="@font/lobster"/>
 
-        <TextureView
-            android:layout_width="match_parent"
+
+    <!--Betel Manastur-->
+    <RelativeLayout
+        android:id="@+id/BetelMan"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:id="@+id/BM1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-          />
-
-    </LinearLayout>
+            android:text="@string/BM1" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"> <!-- this modification is for testing purposes
-        now commit these changes to your first commit on develop -->
-
-
-        <TextureView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/BM2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            />
+            android:layout_below="@id/BM1"
+            android:text="@string/BM2" />
+
+        <ImageButton
+            android:id="@+id/imageBM"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/BM_logo" />
+    </RelativeLayout>
 
 
-        <!-- after you make a change, you commit it (locally) and push it (to the origin) and just after that you do the pull-request-->
-    </LinearLayout>
-
-    <LinearLayout
+    <!--Betel Vest-->
+    <RelativeLayout
+        android:id="@+id/BetelVest"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="150dp">
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/BV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BV1" />
 
-    <LinearLayout
+        <TextView
+            android:id="@+id/BV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BV1"
+            android:text="@string/BV2" />
+
+        <ImageButton
+            android:id="@+id/imageBV"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/BV_logo" />
+    </RelativeLayout>
+
+
+    <!--Betel Centru-->
+    <RelativeLayout
+        android:id="@+id/BetelCen"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="150dp">
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/BC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BC1" />
 
+        <TextView
+            android:id="@+id/BC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BC1"
+            android:text="@string/BC2" />
+
+        <ImageButton
+            android:id="@+id/imageBC"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/BC_logo" />
+    </RelativeLayout>
+
+
+    <!--Media-->
     <LinearLayout
+        android:id="@+id/media"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".4">
 
     </LinearLayout>
-
-
-
-
-
-
 
 
 </LinearLayout>

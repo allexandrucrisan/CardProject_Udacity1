@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Card</string>
+    <string name="title">Welcome to Betel</string>
+    <string name="BM1">Betel Manastur</string>
+    <string name="BM2">Ravasului 4</string>
+    <string name="BV1">Betel Vest</string>
+    <string name="BV2">Avram Iancu 295</string>
+    <string name="BC1">Betel Centru</string>
+    <string name="BC2">Casa de Cultura a Studentilor</string>
 </resources>
