@@ -15,12 +15,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
-
 
                 <TextView
                     android:id="@+id/textView"
@@ -31,9 +30,7 @@
                     android:text="@string/title"
                     android:textSize="40sp" />
 
-
             </RelativeLayout>
-
 
             <!--Betel Manastur-->
             <RelativeLayout
@@ -42,19 +39,17 @@
                 android:layout_height="150dp"
                 android:background="@drawable/gradient_green">
 
-
                 <TextView
                     android:id="@+id/BM1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="25dp"
-                    android:text="@string/BM1"
-                    android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:text="@string/BetelManasturTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeMedium"
                     android:textStyle="bold"
                     app:fontFamily="cursive" />
-
 
                 <TextView
                     android:id="@+id/BM2"
@@ -62,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/BM1"
                     android:layout_marginLeft="25dp"
-                    android:text="@string/BM2"
+                    android:text="@string/BetelManasturAddress"
                     android:textStyle="italic" />
 
                 <ImageView
@@ -74,7 +69,6 @@
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/bm_logo" />
             </RelativeLayout>
-
 
             <!--Betel Vest-->
             <RelativeLayout
@@ -89,9 +83,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="25dp"
-                    android:text="@string/BV1"
-                    android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:text="@string/BetelVestTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeMedium"
                     android:textStyle="bold"
                     app:fontFamily="cursive" />
 
@@ -101,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/BV1"
                     android:layout_marginLeft="25dp"
-                    android:text="@string/BV2"
+                    android:text="@string/BetelVestAddress"
                     android:textStyle="italic" />
 
                 <ImageView
@@ -113,7 +107,6 @@
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/bv_logo" />
             </RelativeLayout>
-
 
             <!--Betel Centru-->
             <RelativeLayout
@@ -128,11 +121,11 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="25dp"
-                    android:text="@string/BC1"
-                    android:textSize="30sp"
+                    android:text="@string/BetelCentruTitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeMedium"
                     android:textStyle="bold"
-                    app:fontFamily="cursive"
-                    android:textColor="@color/black"/>
+                    app:fontFamily="cursive" />
 
                 <TextView
                     android:id="@+id/BC2"
@@ -140,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/BC1"
                     android:layout_marginLeft="25dp"
-                    android:text="@string/BC2"
+                    android:text="@string/BetelCentruAddress"
                     android:textStyle="italic" />
 
                 <ImageView
@@ -153,7 +146,6 @@
                     app:srcCompat="@drawable/bc_logo" />
             </RelativeLayout>
 
-
             <!--Media-->
             <RelativeLayout
                 android:id="@+id/media"
@@ -161,21 +153,20 @@
                 android:layout_height="57dp"
                 android:orientation="horizontal">
 
-
                 <ImageButton
-                    android:id="@+id/ytButton"
+                    android:id="@+id/youtubeButton"
                     style="@android:style/Widget.ImageButton"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toLeftOf="@id/wwButon"
+                    android:layout_toLeftOf="@id/wwwButon"
                     android:adjustViewBounds="false"
                     android:cropToPadding="false"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/yt_logo" />
 
                 <ImageButton
-                    android:id="@+id/wwButon"
+                    android:id="@+id/wwwButon"
                     style="@android:style/Widget.ImageButton"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -187,200 +178,18 @@
                     app:srcCompat="@drawable/ww_logo" />
 
                 <ImageButton
-                    android:id="@+id/fbButton"
+                    android:id="@+id/facebookButton"
                     style="@android:style/Widget.ImageButton"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@id/wwButon"
+                    android:layout_toRightOf="@id/wwwButon"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/fb_logo" />
             </RelativeLayout>
 
-
         </LinearLayout>
-
-
-
 
     </ScrollView>
 
 </LinearLayout>
-<!--
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
-
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="@string/title"
-            android:textSize="40sp" />
-
-
-    </RelativeLayout>
-
-
-
-    <RelativeLayout
-        android:id="@+id/BetelMan"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/gradient_green">
-
-
-        <TextView
-            android:id="@+id/BM1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="25dp"
-            android:text="@string/BM1"
-            android:textSize="30sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:fontFamily="cursive" />
-
-
-        <TextView
-            android:id="@+id/BM2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/BM1"
-            android:layout_marginLeft="25dp"
-            android:text="@string/BM2"
-            android:textStyle="italic" />
-
-        <ImageView
-            android:id="@+id/imageBM"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/bm_logo" />
-    </RelativeLayout>
-
-
-
-    <RelativeLayout
-        android:id="@+id/BetelVest"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/gradient_red">
-
-        <TextView
-            android:id="@+id/BV1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="25dp"
-            android:text="@string/BV1"
-            android:textSize="30sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:fontFamily="cursive" />
-
-        <TextView
-            android:id="@+id/BV2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/BV1"
-            android:layout_marginLeft="25dp"
-            android:text="@string/BV2"
-            android:textStyle="italic" />
-
-        <ImageView
-            android:id="@+id/imageBV"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/bv_logo" />
-    </RelativeLayout>
-
-
-
-    <RelativeLayout
-        android:id="@+id/BetelCen"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/gradient_yellow">
-
-        <TextView
-            android:id="@+id/BC1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="25dp"
-            android:text="@string/BC1"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:fontFamily="cursive"
-            android:textColor="@color/black"/>
-
-        <TextView
-            android:id="@+id/BC2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/BC1"
-            android:layout_marginLeft="25dp"
-            android:text="@string/BC2"
-            android:textStyle="italic" />
-
-        <ImageView
-            android:id="@+id/imageBC"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/bc_logo" />
-    </RelativeLayout>
-
-
-
-    <RelativeLayout
-        android:id="@+id/media"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:orientation="horizontal">
-
-
-        <ImageButton
-            android:id="@+id/ytButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/yt_logo"
-            android:scaleType="centerCrop"
-            android:layout_toLeftOf="@id/wwButon"
-            android:layout_marginTop="5dp"/>
-
-        <ImageButton
-            android:id="@+id/wwButon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/ww_logo"
-            android:scaleType="centerCrop"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"/>
-
-        <ImageButton
-            android:id="@+id/fbButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/fb_logo"
-            android:scaleType="centerCrop"
-            android:layout_toRightOf="@id/wwButon"
-            android:layout_marginTop="5dp"/>
-    </RelativeLayout>
-
-
-</LinearLayout>
-
--->

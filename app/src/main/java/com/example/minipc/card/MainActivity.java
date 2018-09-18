@@ -7,48 +7,53 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.net.URL;
+
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton ytRedirect;
-    ImageButton fbRedirect;
+    ImageButton youtubeRedirect;
+    ImageButton facebookRedirect;
     ImageButton wwwRedirect;
+
+    private final String FACEBOOK_URL = "https://www.facebook.com/betelmanastur/";
+    private final String YOUTUBE_URL = "https://www.youtube.com/channel/UCM0kcPims3a4RFmGtx92M7Q";
+    private final String WEBSITE_URL = "https://www.bisericabetel.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ytRedirect = (ImageButton) findViewById(R.id.ytButton);
-        ytRedirect.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+        youtubeRedirect = (ImageButton) findViewById(R.id.youtubeButton);
+        youtubeRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCM0kcPims3a4RFmGtx92M7Q"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(YOUTUBE_URL));
                 startActivity(browserIntent);
             }
         });
 
-
-        wwwRedirect = (ImageButton) findViewById(R.id.wwButon);
+        wwwRedirect = (ImageButton) findViewById(R.id.wwwButon);
         wwwRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.bisericabetel.com"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE_URL));
                 startActivity(browserIntent);
             }
         });
 
-        fbRedirect = (ImageButton) findViewById(R.id.fbButton);
-        fbRedirect.setOnClickListener(new View.OnClickListener() {
+        facebookRedirect = (ImageButton) findViewById(R.id.facebookButton);
+        facebookRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/betelmanastur/"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(FACEBOOK_URL));
                 startActivity(browserIntent);
             }
         });
-
-
-
-
 
 
     }
